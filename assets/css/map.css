@@ -1,8 +1,8 @@
 .pg-map {
   background-image: url(../img/imagens/map/fundo.png);
-  background-size: cover; /* ⬅️ cobre toda a área */
-  background-repeat: no-repeat; /* ⬅️ evita repetição */
-  background-attachment: fixed; /* ⬅️ mantém fixo durante scroll */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .menu-item {
@@ -203,7 +203,7 @@ h1 {
   color: #ffffff;
   text-align: center;
   padding: 20px 15px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Fredoka", sans-serif;
   font-size: 0.95rem;
   line-height: 1.5;
   border-top: 3px solid #b13bb1;

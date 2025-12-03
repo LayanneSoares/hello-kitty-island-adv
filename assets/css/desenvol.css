@@ -12,11 +12,6 @@
   font-size: 25px;
 }
 
-@font-face {
-  font-family: "HelloKitty";
-  src: url("fonts/Hello Kitty.otf") format("opentype");
-}
-
 .menu-item:hover {
   color: #9e0552;
 }
@@ -151,10 +146,10 @@
 .dev-info {
   flex: 1;
   color: #fff;
-  font-family: "Baloo 2", sans-serif;
 }
 
 .dev-info p {
   margin: 5px 0;
   line-height: 30px;
+  font-family: "Fredoka", sans-serif;
 }

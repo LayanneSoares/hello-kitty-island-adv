@@ -91,7 +91,7 @@
 table.receitas {
   width: 100%;
   border-collapse: collapse;
-  font-family: Arial, sans-serif;
+  font-family: "Fredoka", sans-serif;
   text-align: left;
   background: rgba(19, 28, 148, 0.459);
 }
@@ -170,7 +170,7 @@ td ul {
   color: #ffffff;
   text-align: center;
   padding: 20px 15px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Fredoka", sans-serif;
   font-size: 0.95rem;
   line-height: 1.5;
   border-top: 3px solid #4e5ff7;
