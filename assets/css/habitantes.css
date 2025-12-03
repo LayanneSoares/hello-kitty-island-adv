@@ -108,7 +108,7 @@
 
 .card-back {
   transform: rotateY(180deg);
-  color: #555;
+  color: #ffffff;
   font-size: 14px;
   overflow-y: auto;
 }
@@ -191,11 +191,11 @@
 }
 
 .skills-list li {
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(25, 73, 92, 0.35);
   padding: 8px 10px;
   border-radius: 10px;
   font-size: 0.9rem;
-  color: #222;
+  color: #fff9f9;
   text-align: left;
   box-shadow: 0 4px 8px rgba(2, 19, 117, 0.06);
 }
