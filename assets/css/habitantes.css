@@ -1,0 +1,265 @@
+.pg-personagens {
+  background-image: url(../img/imagens/personagens/fundo4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.menu-item {
+  display: flex;
+  text-decoration: none;
+  color: rgb(5, 8, 212);
+  font-size: 25px;
+}
+
+.menu-item:hover {
+  color: #14097c;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  min-height: 380px;
+  perspective: 1000px;
+  border-radius: 20px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card-flip {
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+
+  height: 500px;
+  text-align: center;
+
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  margin: auto;
+}
+
+.card-flip:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(255, 105, 180, 0.2);
+  border: 2px solid #ffffff;
+  backdrop-filter: blur(6px);
+  background: rgba(150, 208, 247, 0.781);
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card-front {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: visible;
+}
+
+.card-front img {
+  width: 100%;
+  max-width: 160px;
+  max-height: 60%;
+  height: auto;
+
+  object-fit: contain;
+  display: block;
+}
+
+.card-front h3 {
+  margin: 10px 0 5px;
+  color: #021375;
+  font-size: 1.1rem;
+}
+
+.card-front p,
+.card-back p {
+  overflow-wrap: break-word;
+  text-align: center;
+  max-width: 100%;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  color: #555;
+  font-size: 14px;
+  overflow-y: auto;
+}
+
+.card-back::-webkit-scrollbar {
+  width: 6px;
+}
+
+.card-back::-webkit-scrollbar-thumb {
+  background: #ff9ecf;
+  border-radius: 10px;
+}
+
+.card-back::-webkit-scrollbar-track {
+  background: #ffe4f2;
+}
+
+.titulo-secundario {
+  font-family: "Fredoka", sans-serif;
+  font-size: 2rem;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.desbloqueaveis-section {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.card-personagem {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.card-personagem p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.card-back {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.card-back .back-content {
+  width: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-back h3 {
+  text-align: center;
+  font-size: 1.05rem;
+  margin: 4px 0 6px;
+  color: #021375;
+}
+
+.skill-category h4 {
+  margin: 8px 0 6px;
+  font-size: 0.95rem;
+  color: #03306f;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.skills-list li {
+  background: rgba(255, 255, 255, 0.35);
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: #222;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(2, 19, 117, 0.06);
+}
+
+.skills-list li strong {
+  display: inline-block;
+  min-width: 88px;
+}
+
+.conteudo {
+  align-items: center;
+}
+
+.conteudo h5,
+h6 {
+  font-size: 44px;
+  text-align: center;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: visible;
+  color: aliceblue;
+  margin-top: 100px;
+}
+
+.conteudo p {
+  text-align: center;
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.site-footer {
+  background-color: #130f49;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 15px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  border-top: 3px solid #4ec2f7;
+}
+
+.site-footer strong {
+  font-weight: bold;
+  color: #93e2ec;
+}
+
+.card-front p img {
+  width: 30px !important;
+  max-width: 50px !important;
+  max-height: none !important;
+  height: auto !important;
+  margin: 0px;
+  border-radius: 8px;
+  display: inline-block;
+  vertical-align: middle !important;
+}
+
+.cute {
+  width: 50px !important;
+  max-width: 50px !important;
+  max-height: none !important;
+  height: auto !important;
+  margin: 0px;
+  border-radius: 8px;
+  display: inline-block;
+  vertical-align: middle !important;
+}

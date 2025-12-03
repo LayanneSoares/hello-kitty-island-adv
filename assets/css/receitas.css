@@ -1,0 +1,183 @@
+.pg-receitas {
+  background-image: url(..//img/imagens/cook/fundo2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.menu-item {
+  display: flex;
+  text-decoration: none;
+  color: rgb(5, 17, 182);
+  font-size: 25px;
+}
+
+.menu-item:hover {
+  color: #0b0c4d;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff8c;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.952);
+}
+
+.container {
+  color: #ffffff;
+}
+
+.linha-com-texto span {
+  color: rgb(12, 5, 112);
+  font-weight: bold;
+  font-size: 44px;
+  background-color: #f5f5f5cc;
+  padding: 0 15px;
+  z-index: 2;
+  position: relative;
+  white-space: nowrap;
+  border-color: #f8f6f8;
+  border-radius: 40px;
+  border-bottom: #f8f6f8;
+  padding: 15px 30px;
+  margin-top: 70px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.952);
+}
+
+.linha-com-texto::before {
+  flex: 2;
+  align-items: center;
+  background-color: #ffffffb9;
+  box-shadow: 0 4px 20px rgb(255, 255, 255);
+}
+
+.linha-com-texto::after {
+  flex: 2;
+  align-items: center;
+  background-color: #ffffffb9;
+  box-shadow: 0 4px 20px rgb(255, 255, 255);
+}
+
+.linha-com-texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.linha-com-texto::before,
+.linha-com-texto::after {
+  position: relative;
+  top: 35px;
+  transform: translateY(-50%);
+}
+
+.title p {
+  text-align: center;
+  color: #ffff;
+  font-size: 25px;
+}
+
+.title img {
+  vertical-align: middle;
+  height: 25px;
+}
+
+table.receitas {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  background: rgba(19, 28, 148, 0.459);
+}
+
+table.receitas th,
+table.receitas td {
+  border: 1px solid #0a022e;
+  padding: 12px;
+  vertical-align: middle;
+}
+
+table.receitas thead th {
+  background: #050777;
+  font-weight: bold;
+}
+
+.receitas td:first-child img {
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+table.receitas li img {
+  width: 30px;
+  height: 30px;
+  border-radius: 12px;
+  vertical-align: middle;
+}
+
+.tag {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+}
+
+.tag-icon {
+  width: 35px;
+  height: auto;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+
+.tag-two {
+  width: 35px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.tag-one {
+  width: 28px;
+  height: auto;
+  vertical-align: middle;
+}
+
+td ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.conteudo h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 44px;
+}
+
+.conteudo p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.site-footer {
+  background-color: #100f49;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 15px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  border-top: 3px solid #4e5ff7;
+  margin-top: 50px;
+}
+
+.site-footer strong {
+  font-weight: bold;
+  color: #5ed8fd;
+}
