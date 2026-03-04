@@ -3,24 +3,34 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding-top: 110px;
 }
 
 .menu-item {
-  display: flex;
+  padding: 6px 14px;
+  border-radius: 20px;
+
+  background-color: #462374;
+  color: white;
+
   text-decoration: none;
-  color: rgb(122, 118, 122);
-  font-size: 25px;
 }
+
 .menu-item:hover {
-  color: #252525;
+  background-color: #341a55;
+  color: rgb(255, 255, 255);
 }
 
 h1 {
   font-size: 44px;
-  margin-top: 150px;
   text-align: center;
   color: rgb(252, 251, 252);
-  box-shadow: 0 4px 20px rgba(229, 197, 236, 0.952);
+}
+
+.quadro-blur p {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  line-height: 1.6;
 }
 
 .quadro-blur {
@@ -35,6 +45,7 @@ h1 {
   border-radius: 25px;
   box-sizing: border-box;
   border: 2px solid rgba(247, 189, 242, 0.637);
+  margin-top: 30px;
 }
 
 .galeria {
@@ -213,4 +224,75 @@ h1 {
 .site-footer strong {
   font-weight: bold;
   color: #460e46;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .pg-map {
+    background-attachment: scroll;
+    padding-top: 120px;
+  }
+
+  .quadro-blur {
+    min-height: auto;
+    padding: 40px 28px;
+    margin: 25px 16px;
+    width: auto;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .galeria {
+    gap: 18px;
+  }
+
+  .galeria img {
+    height: 240px;
+  }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  .pg-map {
+    padding-top: 160px; /* menu quebra linha no celular */
+  }
+
+  h1 {
+    font-size: 26px;
+    padding: 0 10px;
+  }
+
+  .quadro-blur {
+    padding: 18px 14px;
+    margin: 16px 12px;
+    border-radius: 18px;
+  }
+
+  .quadro-blur p {
+    font-size: 16px;
+  }
+
+  .galeria {
+    grid-template-columns: 1fr; /* 1 por linha */
+    gap: 14px;
+  }
+
+  .galeria img {
+    height: 210px;
+  }
+}
+
+/* Celular pequeno */
+@media (max-width: 380px) {
+  .pg-map {
+    padding-top: 175px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .galeria img {
+    height: 190px;
+  }
 }

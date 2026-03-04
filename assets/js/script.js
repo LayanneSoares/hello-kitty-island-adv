@@ -94,3 +94,30 @@ setInterval(trocarFrase, 4000);
 
 const mascote = document.getElementById("mascoteGuia");
 if (mascote) mascote.addEventListener("click", trocarFrase);
+
+// Menu some ao descer e aparece ao subir
+const menu = document.querySelector(".top-menu");
+
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  const currentY = window.scrollY;
+
+  // Aplica fundo quando já rolou um pouco
+  if (currentY > 10) {
+    menu.classList.add("menu-scrolled");
+  } else {
+    menu.classList.remove("menu-scrolled");
+  }
+
+  // Direção do scroll
+  if (currentY > lastScrollY && currentY > 80) {
+    // descendo (depois de um tantinho)
+    menu.classList.add("menu-hidden");
+  } else {
+    // subindo
+    menu.classList.remove("menu-hidden");
+  }
+
+  lastScrollY = currentY;
+});

@@ -6,13 +6,18 @@
 }
 
 .menu-item {
-  display: flex;
+  padding: 6px 14px;
+  border-radius: 20px;
+
+  background-color: #0fc2da;
+  color: white;
+
   text-decoration: none;
-  color: #1b7a86cc;
-  font-size: 25px;
 }
+
 .menu-item:hover {
-  color: rgb(21, 148, 165)cc;
+  background-color: #066d7a;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -179,4 +184,85 @@
 .site-footer strong {
   font-weight: bold;
   color: #1cd1e9; /
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .quadro-blur{
+    margin: 25px 16px;
+    padding: 20px;
+  }
+
+  .cards{
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 14px;
+  }
+}
+
+/* Celular */
+@media (max-width: 700px) {
+  .pg-gift{
+    background-attachment: scroll; 
+  }
+
+ 
+  .linha-com-texto{
+    margin: 20px auto;
+    padding: 0 10px;
+    margin-top: 70px;
+  }
+
+  .linha-com-texto span{
+    font-size: 26px;
+    padding: 10px 16px;
+    white-space: normal;    
+    text-align: center;
+  }
+
+  .linha-com-texto::before,
+  .linha-com-texto::after{
+    top: 22px;
+    flex: 1;
+    box-shadow: none;
+    opacity: 0.6;
+  }
+
+ 
+  .cards{
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+    gap: 12px;
+  }
+
+  .card{
+    max-width: none;
+    padding: 12px;
+  }
+
+  .personagem{
+    width: 80px;
+  }
+
+  .etiquetas img{
+    width: 28px;
+  }
+
+  .card hr{
+    margin-top: 20px; 
+  }
+}
+
+/* Celular pequeno */
+@media (max-width: 420px) {
+  /* cards em 1 coluna */
+  .cards{
+    grid-template-columns: 1fr;
+  }
+
+  .linha-com-texto span{
+    font-size: 22px;
+  }
+
+  .title p{
+    font-size: 18px;
+  }
 }

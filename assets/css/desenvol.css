@@ -6,16 +6,25 @@
 }
 
 .menu-item {
-  display: flex;
+  padding: 6px 14px;
+  border-radius: 20px;
+
+  background-color: #d371ad;
+  color: white;
+
   text-decoration: none;
-  color: rgb(235, 67, 198);
-  font-size: 25px;
 }
 
 .menu-item:hover {
-  color: #9e0552;
+  background-color: #99507d;
+  color: rgb(255, 255, 255);
 }
 
+.title p {
+  text-align: center;
+  color: #ffff;
+  font-size: 25px;
+}
 .linha-com-texto span {
   color: rgb(252, 251, 252);
   font-weight: bold;
@@ -152,4 +161,120 @@
   margin: 5px 0;
   line-height: 30px;
   font-family: "Fredoka", sans-serif;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .linha-com-texto span {
+    font-size: 32px;
+    padding: 12px 22px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .dev-area {
+    flex-direction: column;
+    padding: 25px;
+    gap: 25px;
+  }
+
+  .dev-imagens {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .dev-imagens img {
+    width: 240px;
+  }
+
+  .dev-texto {
+    max-width: 100%;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .dev-card {
+    padding: 22px;
+    gap: 20px;
+  }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  .quadro-blur {
+    margin: 20px 12px;
+    padding: 16px;
+  }
+
+  .linha-com-texto {
+    margin: 20px auto;
+  }
+
+  .linha-com-texto span {
+    font-size: 26px;
+    padding: 10px 18px;
+    text-align: center;
+  }
+
+  .linha-com-texto::before,
+  .linha-com-texto::after {
+    flex: 1;
+    top: 22px;
+    box-shadow: none;
+    opacity: 0.6;
+  }
+
+  .dev-area {
+    padding: 18px;
+    gap: 18px;
+  }
+
+  .dev-imagens {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .dev-imagens img {
+    width: min(320px, 100%);
+  }
+
+  .dev-texto {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .dev-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 18px;
+  }
+
+  .dev-photo img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .dev-info {
+    width: 100%;
+  }
+
+  .dev-info p {
+    line-height: 24px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .linha-com-texto span {
+    font-size: 20px;
+  }
+
+  .dev-photo img {
+    width: 140px;
+    height: 140px;
+  }
 }

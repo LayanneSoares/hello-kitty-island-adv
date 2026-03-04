@@ -6,14 +6,18 @@
 }
 
 .menu-item {
-  display: flex;
+  padding: 6px 14px;
+  border-radius: 20px;
+
+  background-color: #34328d;
+  color: white;
+
   text-decoration: none;
-  color: rgb(5, 8, 212);
-  font-size: 25px;
 }
 
 .menu-item:hover {
-  color: #14097c;
+  background-color: #1c1b4b;
+  color: rgb(255, 255, 255);
 }
 
 .card {
@@ -205,6 +209,12 @@
   min-width: 88px;
 }
 
+.sub {
+  font-size: 1.1rem;
+  margin-top: -110px;
+  color: #ffffff;
+}
+
 .conteudo {
   align-items: center;
 }
@@ -217,7 +227,7 @@ h6 {
   text-align: center;
   overflow: visible;
   color: aliceblue;
-  margin-top: 100px;
+  font-family: "Fredoka", sans-serif;
 }
 
 .conteudo p {
@@ -262,4 +272,106 @@ h6 {
   border-radius: 8px;
   display: inline-block;
   vertical-align: middle !important;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .pg-personagens {
+    background-attachment: scroll;
+  }
+
+  .cards-container {
+    padding: 0 16px;
+    gap: 16px;
+  }
+
+  .sub {
+    font-size: 1rem;
+    margin-top: -90px;
+    padding: 0 16px;
+  }
+
+  .card-inner {
+    height: 460px;
+  }
+
+  .conteudo h5,
+  .conteudo h6 {
+    font-size: 34px;
+    margin-top: 30px;
+  }
+
+  .conteudo p {
+    font-size: 18px;
+    padding: 0 12px;
+  }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  /* título/textos grandes não estourarem */
+  .conteudo h5,
+  .conteudo h6 {
+    font-size: 26px;
+    margin-top: 30px;
+    padding: 0 12px;
+  }
+
+  .sub {
+    font-size: 1rem;
+    margin-top: -90px;
+    padding: 0 12px;
+  }
+
+  .titulo-secundario {
+    font-size: 1.5rem;
+    padding: 0 12px;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    padding: 0 12px;
+    gap: 14px;
+  }
+
+  .card,
+  .card-inner {
+    max-width: 100%;
+  }
+
+  .card-inner {
+    height: 440px;
+  }
+
+  .card-front img {
+    max-width: 140px;
+  }
+
+  .skills-list li {
+    font-size: 0.85rem;
+    padding: 7px 9px;
+  }
+}
+
+/* Celular pequeno */
+@media (max-width: 380px) {
+  .card-inner {
+    height: 420px;
+  }
+
+  .sub {
+    font-size: 0.9rem;
+    margin-top: -100px;
+    padding: 0 12px;
+  }
+
+  .card-front img {
+    max-width: 120px;
+  }
+
+  .conteudo h5,
+  .conteudo h6 {
+    font-size: 22px;
+  }
 }

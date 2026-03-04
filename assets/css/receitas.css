@@ -6,14 +6,18 @@
 }
 
 .menu-item {
-  display: flex;
+  padding: 6px 14px;
+  border-radius: 20px;
+
+  background-color: #0d0485;
+  color: white;
+
   text-decoration: none;
-  color: rgb(5, 17, 182);
-  font-size: 25px;
 }
 
 .menu-item:hover {
-  color: #0b0c4d;
+  background-color: #080358;
+  color: rgb(255, 255, 255);
 }
 
 .container {
@@ -32,7 +36,7 @@
 .linha-com-texto span {
   color: rgb(12, 5, 112);
   font-weight: bold;
-  font-size: 44px;
+  font-size: 30px;
   background-color: #f5f5f5cc;
   padding: 0 15px;
   z-index: 2;
@@ -80,7 +84,7 @@
 .title p {
   text-align: center;
   color: #ffff;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .title img {
