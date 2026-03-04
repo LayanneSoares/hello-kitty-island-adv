@@ -25,7 +25,6 @@ Disciplina: **Introdução à Tecnologia Web**
 
 ## ✨ Destaques
 
-- 📱 **Responsivo:** Interface adaptada para celulares e diferentes tamanhos de tela.
 - 🎨 **Design temático:** Identidade visual inspirada no universo Hello Kitty.
 - 🧩 **Layout organizado:** Estrutura pensada para facilitar navegação e leitura.
 - ⚡ **Experiência:** Navegação simples e visualmente agradável.
@@ -44,7 +43,7 @@ Disciplina: **Introdução à Tecnologia Web**
 
 ## 👩‍💻 Autora
 
-Desenvolvido por [Layanne Soares] (https://github.com/LayanneSoares)
+Desenvolvido por [Layanne Soares](https://github.com/LayanneSoares)
 
 Curso: **Sistemas de Informação**  
 Instituição: **UNIRIOS — Centro Universitário do Rio São Francisco**
